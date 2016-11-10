@@ -1,0 +1,24 @@
+html
+body
+
+
+{   font-family: "Spoqa Han Sans", Dotum, Gulim, Sans-Serif; }
+
+h3 {
+    color: #3F51B5;
+}
+
+dt {
+    color: #3F51B5;
+    font-size: 2rem;
+}
+
+.note-list dd {
+  padding-left: 20px;
+  background: url("../images/icon-dot.png") no-repeat;
+}
+
+dd {
+    margin-left: 15px;
+}
+

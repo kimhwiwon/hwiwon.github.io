@@ -1,0 +1,75 @@
+body {
+	margin: 3rem;
+}
+
+img {
+	vertical-align: top;
+}
+
+.image-wrapper {
+
+	width: 200px;
+	height: 200px;
+	background: #212021;
+}
+
+
+.product-cactus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #839734;
+}
+
+.product-hanger-chip {
+    background: #7b1828;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: -2px 10px 10px 1px rgba(75, 14, 23, 0.6);
+}
+
+.product-heart-love {
+    background: #fbd600;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.product-heart-love img {
+    position: relative;
+    top: 35px;
+    left: 16px;
+    /* background: #fcd000; */
+}
+
+.product-hanger-chip img {
+    top: 28px;
+    left: 26px;
+    position: relative;
+}
+
+.product-cactus img {
+	position: relative;
+	top: 25px;
+	left: 125px;
+}
+
+.dinner-food-wrapper {
+	position: relative;
+} 
+
+.dinner-food {
+	position: absolute;
+	right: 26px;
+	bottom: 22px;
+	margin: 0;
+	font-family: "Open Sans";
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0,0,0, 0.45);
+	text-transform: uppercase;
+}

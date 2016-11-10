@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>플로팅 테크닉</title>
+	<style>
+	body {
+		margin: 40px;
+	}
+		.parent {
+			background: #dac494;
+		}
+		.child {
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		.c1 {background: #fc8583;}
+		.c2 {background: #f1ff70;}
+		.c3 {background: #74eefb;}
+		.c4 {background: #a867fb;}
+		
+		.ib {display: inline-block;}
+		.floating {
+			float: right;
+			margin-right: 10px;
+		}
+
+		.float-right {
+			float: right;
+		}
+		.float-left {
+			float: left;
+		}
+		.clear {
+			clear: both;
+	</style>
+</head>
+
+
+<body>
+<h2><code>inline block</code></h2>
+<div class="parent">
+	<div class="ib child c1">child box</div>
+	<div class="ib child c2">child box</div>
+	<div class="ib child c3">child box</div>
+	<div class="ib child c4">child box</div>
+</div>
+
+<h2><code>floating</code></h2>
+<div class="parent">
+	<div class="float-left child c1">child box</div>
+	<div class="float-left child c2">child box</div>
+	<div class="float-left child c3">child box</div>
+	<div class="float-left child c4">child box</div>
+</div>	
+
+<p class="clear"> 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 남산 위의 저 소나무 철갑을 두른 듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 가을하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편 단심일세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+</p>
+</body>
+
+
+</html>
