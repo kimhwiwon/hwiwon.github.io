@@ -1,0 +1,94 @@
+/* default module ---------------------------------------------------------- */
+body {
+  margin: 0;
+}
+
+/* container module ---------------------------------------------------------- */
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* show-grid module ---------------------------------------------------------- */
+.show-grid {
+  background: linear-gradient(transparent 9px, hsla(339, 100%, 19%, 0.4) 9px);
+  background-size: 1px 10px;
+}
+
+.show-grid .container {
+  position: relative;
+  height: 2300px;
+}
+
+.show-grid .container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, hsla(255, 99%, 62%, 0.18) 50%, hsla(64, 89%, 77%, 0.42) 50%);
+  background-size: 240px 1px;
+}
+
+/* row module ---------------------------------------------------------- */
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* column module ---------------------------------------------------------- */
+[class*="col-"] {float: left;}
+
+.col-1  { width: 120px;  }
+.col-2  {width: 240px;}
+.col-3  { width: 360px; }
+.col-4  { width: 480px; }
+.col-5  { width: 600px; }
+.col-6  { width: 720px; }
+.col-7  { width: 840px; }
+.col-8  { width: 960px; }
+
+
+/* push/pull module ---------------------------------------------------------- */
+[class*="push-"],
+[class*="pull-"] { position: relative; }
+
+.push-1  { left: 120px;  }
+.push-2  { left: 240px; }
+.push-3  { left: 360px; }
+.push-4  { left: 480px; }
+.push-5  { left: 600px; }
+.push-6  { left: 720px; }
+.push-7  { left: 840px; }
+.push-8  { left: 960px; }
+
+.pull-1  { right: 120px;  }
+.pull-2  { right: 240px; }
+.pull-3  { right: 360px; }
+.pull-4  { right: 480px; }
+.pull-5  { right: 600px; }
+.pull-6  { right: 720px; }
+.pull-7  { right: 840px; }
+.pull-8  { right: 960px; }
+
+
+.prefix-1  { margin left: 120px;  }
+.prefix-2  { margin left: 240px; }
+.prefix-3  { margin left: 360px; }
+.prefix-4  { margin left: 480px; }
+.prefix-5  { margin left: 600px; }
+.prefix-6  { margin left: 720px; }
+.prefix-7  { margin left: 840px; }
+.prefix-8  { margin left: 960px; }
+
+.suffix-1  { margin right: 120px;  }
+.suffix-2  { margin right: 240px; }
+.suffix-3  { margin right: 360px; }
+.suffix-4  { margin right: 480px; }
+.suffix-5  { margin right: 600px; }
+.suffix-6  { margin right: 720px; }
+.suffix-7  { margin right: 840px; }
+.suffix-8  { margin right: 960px; }

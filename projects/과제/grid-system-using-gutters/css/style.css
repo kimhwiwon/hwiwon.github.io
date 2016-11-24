@@ -1,0 +1,93 @@
+html {font-size: 10px}
+p { margin: 0;}
+img { vertical-align: top;}
+
+
+
+/** banner **/
+.banner {
+  position: relative;
+  width: 720px;
+  height: 380px;
+}
+
+.banner img {
+  position: absolute;
+  margin: 0;
+}
+
+.banner h1 {
+  z-index: 1000
+}
+
+/** navi **/
+.navi *{
+  margin: 0;
+}
+
+.navi {
+	background: #333333;
+	height: 760px;
+  width: 240px;
+	font-family: "Roboto", Helvetica, Arial, Sans-Serif;
+}
+
+.navi h1 {
+	color: #fff;
+	margin: 0;
+	margin-top: 70px;
+	font-weight: 500;
+	font-size: 3.2rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+.navi ul {
+	color: #fff;
+	margin: 0;
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+}
+
+
+/** CTA **/
+.banner-CTA {
+  position: relative;
+  z-index: 10;
+  margin-top: 46px;
+  display: inline-block;
+  border: 1px solid #fb875e;
+  padding: 1.4166em 4em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+
+.banner-CTA:hover {
+  color: #fb875e;
+}
+.banner-CTA:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsla(50, 100%, 76%, 0.7);
+  border-radius: 4px;
+}
+.banner-CTA::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  transition: all 0.4s ease-out;
+}
+.banner-CTA:hover::before {
+  right: 0;
+}

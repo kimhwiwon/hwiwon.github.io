@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+.space {
+	position: relative;
+	height: 900vh;
+	background: url("../assets/space-bg.jpg") center top;
+}
+
+
+.moon {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 960px;
+	height: 503px;
+	margin-left: -480px;
+	background: url("../assets/moon.png") no-repeat;
+}
+
+.planet {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-left: -200px;
+	background: url("../assets/planet.png");
+}
+
+.sun { 
+	top: 100px; 
+}
+.mercury {
+	top: 700px;
+	background-position: -400px
+}
+.venus {
+	top: 1300px;
+	background-position: -800px
+}
+.earth {
+	top: 1900px;
+	background-position: -1200px
+}
+.mars {
+	top: 2500px;
+	background-position: -1600px
+}
+.jupiter {
+	top: 3100px;
+	background-position: -2000px
+}
+.saturn {
+	top: 3700px;
+	background-position: -2400px
+}
+.uranus {
+	top: 4300px;
+	background-position: -2800px
+}
+.neptune {
+	top: 4900px;
+	background-position: -3200px
+}
+.pluto {
+	top: 5500px;
+	background-position: -3600px
+}
+
+.rocket {
+	position: fixed;
+	height: 230px;
+	width: 100px; /*10장의 이미지가 합쳐진 배경 이미지*/
+	background: url("../assets/rocket_2x.png");
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	margin-left: -50px;
+	margin-top: -115px;
+	animation: rocket 1s steps(10) infinite;
+
+}
+
+
+/*Browser Support: Desktop IE10+, [Mobile] */
+/*Rocket Animation Design*/
+
+@keyframes rocket {
+	0% { 
+		background-position-x: 0px 
+		transform : scale(1) translateY(0);
+	}
+	50% {
+		transform : scale(0.95) translateY(-15px);
+	  }
+	100% { 
+		background-position-x: -1000px
+		transform : scale(1) translateY(0);
+		 }
+}
